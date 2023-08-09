@@ -2,18 +2,7 @@ import React, { useState, useEffect ,createContext } from "react";
 import { Data } from "../../../data";
 
 
-export const HouseContext = createContext({
-  country: "Estado (todos)",
-  setCountry: () => {},
-  countries: [],
-  property: "Propriedade (todos)",
-  setProperty: () => {},
-  properties: [],
-  price: "Preço estimado (todos)",
-  setPrice: () => {},
-  houses: [],
-  loading: false,
-});
+export const HouseContext = createContext();
 
 const HouseContextProvider = ({ children }) => {
   const [houses, setHouses] = useState(Data);

@@ -2,8 +2,22 @@ import Image from 'next/image';
 import React from 'react';
 import { LuBedSingle, LuBath, LuExpand } from 'react-icons/lu';
 
-export default function Carousel({ house }) {
-  const { image, type, country, address, bedrooms, bathrooms, surface, price } = house
+export interface HouseProps {    
+  house: {    
+    id: number;
+    image: string;
+    type: string;
+    country: string;
+    address: string;
+    bedrooms: number;
+    bathrooms: number;
+    surface: number;
+    price: number;
+  };
+}
+
+export default function House({ house }: HouseProps) {
+  const { id, image, type, country, address, bedrooms, bathrooms, surface, price } = house;
   return (
     <div className='bg-white shadow-lg p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl transition lg:mb-10'>
       <Image className='mb-8' src={image} alt='' />
