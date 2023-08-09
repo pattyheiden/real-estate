@@ -1,7 +1,6 @@
 import React, { useState, useEffect ,createContext } from "react";
 import { Data } from "../../../data";
 
-
 export const HouseContext = createContext();
 
 const HouseContextProvider = ({ children }) => {
