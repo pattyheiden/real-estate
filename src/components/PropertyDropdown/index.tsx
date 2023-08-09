@@ -23,7 +23,7 @@ export default function PropertyDropdown() {
                     }
             </Menu.Button>
             <Menu.Items className="px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg">
-                {properties.map((property, index) => {
+                {properties.map((property: string, index: number) => {
                     return(
                         <Menu.Item 
                         onClick={() => setProperty(property)}
