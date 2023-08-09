@@ -1,14 +1,11 @@
-import { Carousel } from "@/components/Carousel";
-import ImovelItems from "@/components/ImovelItems";
-import { SearchBar } from "@/components/SearBar";
+import Banner from "@/components/Banner";
+import HouseList from "./HouseList";
 
 export default function Page() {
-
   return (
     <>
-      <Carousel />
-      <SearchBar />
-      <ImovelItems />
+      <Banner />      
+      <HouseList />
     </>
   )
 }

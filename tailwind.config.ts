@@ -11,7 +11,9 @@ const config: Config = {
       sans: ['Inter', 'sans-serif'],
     },
     extend: {
-      
+      colors: {
+        'yellow': '#F0B91F',
+      },
     },
   },
   plugins: [],
